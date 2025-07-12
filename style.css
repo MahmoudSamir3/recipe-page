@@ -1,0 +1,159 @@
+:root {
+--White: hsl(0, 0%, 100%);
+--Stone-100: hsl(30, 54%, 90%);
+--Stone-150: hsl(30, 18%, 87%);
+--Stone-600: hsl(30, 10%, 34%);
+--Stone-900: hsl(24, 5%, 18%);
+--Brown-800: hsl(14, 45%, 36%);
+--Rose-800: hsl(332, 51%, 32%);
+--Rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  background-color: var(--Stone-100);
+  color: var(--Stone-600);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: var(--White);
+  max-width: 800px;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.recipe-image {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-family: "Young Serif", serif;
+  color: var(--Stone-900);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: "Young Serif", serif;
+  color: var(--Brown-800);
+  margin-top: 2.5rem;
+}
+
+.prep-time h2 {
+  font-size: 1.25rem; 
+  color: var(--Rose-800);
+  margin-top: 0;
+}
+
+h3 {
+  color: var(--Rose-800);
+  margin-bottom: 1rem;
+}
+
+.intro {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.prep-time {
+  background-color: var(--Rose-50);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.prep-time ul {
+  padding-left: 1.2rem;
+}
+
+.prep-time li {
+  margin-bottom: 0.5rem;
+}
+
+ul,
+ol {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+li {
+  margin-bottom: 0.8rem;
+}
+
+li::first-letter {
+  margin-left: 10px;
+}
+
+ol li::marker {
+    color: var(--Brown-800);
+    font-weight: bold;
+}
+
+strong {
+  color: var(--Stone-900);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--Stone-150);
+  margin: 2.5rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+td {
+  padding: 12px 8px;
+}
+
+tr {
+  border-bottom: 1px solid var(--Stone-150)
+}
+
+tr td:last-child {
+  color: var(--Brown-800);
+  font-weight: bold;
+}
+
+.attribution {
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 3rem;
+  color: var(--Stone-600);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 600px) {
+  .container {
+    padding: 1.25rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .prep-time h2 {
+    font-size: 1.1rem;
+  }
+}
